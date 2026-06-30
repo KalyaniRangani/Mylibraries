@@ -1,6 +1,6 @@
 def contdown(repo)
 {
-  git 'http://github.com/KalyaniRangani/${repo}.git'
+  git "http://github.com/KalyaniRangani/${repo}.git"
 }
 def contbuild()
 {
@@ -8,9 +8,9 @@ def contbuild()
 }
 def contdeploy(jobname,ipadd,contextpath)
 {
-  sh 'scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ipadd}:/var/lib/tomcat10/webapps/testappfuc.war'
+  sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ipadd}:/var/lib/tomcat10/webapps/testappfuc.war"
 }
 def conttest(jobname)
 {
-  sh 'scp /var/lib/jenkins/workspace/${jobname}/testing.jar'
+  sh "scp /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
