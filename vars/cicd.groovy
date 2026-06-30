@@ -1,6 +1,6 @@
 def contdown(repo)
 {
-  git "http://github.com/KalyaniRangani/${repo}.git"
+  git "http://github.com/IntelliqDevops/${repo}.git"
 }
 def contbuild()
 {
