@@ -12,5 +12,5 @@ def contdeploy(jobname,ipadd,contextpath)
 }
 def conttest(jobname)
 {
-  sh "scp /var/lib/jenkins/workspace/${jobname}/testing.jar"
+  sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
